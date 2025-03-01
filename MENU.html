@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Palm Tree Family Restaurant Menu</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+
+  <header>
+    <h1>Palm Tree Family Restaurant</h1>
+    <p>Authentic Indian & Chinese Cuisine</p>
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search menu..." oninput="showSuggestions()">
+      <div id="search-results" class="search-results"></div>
+    </div>
+    
+    
+  </header>
+  <button id="backToTop" onclick="scrollToTop()">↑</button>
+
+  <nav id="navbar"></nav>
+
+  <div class="container" id="menu-container"></div>
+
+  <footer>
+    <p>Call us: 05748 15169 | 05313 76026</p>
+  </footer>
+
+  <script src="script1.js"></script>
+</body>
+</html>
