@@ -455,7 +455,7 @@ menuData.forEach((cat, index) => {
     // Placeholder image (replace in production)
     const img = document.createElement("img");
     const imgText = encodeURIComponent(item.name_en);
-    img.src = `./images/${imgText}.jpg`;
+    img.src = `images/${imgText}.jpg`;
     img.alt = item.name_en;
     card.appendChild(img);
 
