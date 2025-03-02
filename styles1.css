@@ -167,7 +167,7 @@ footer {
 .search-results {
   position: absolute;
   background:#F7E7CE ;
-  
+  color:black;
   width: 200px;
   max-height: 200px;
   overflow-y: auto;
