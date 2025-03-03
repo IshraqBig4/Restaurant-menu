@@ -16,13 +16,16 @@ body {
 
 /* Header Styling */
 header {
-
   background: maroon;
   color: #F7E7CE;
   padding: 20px;
   text-align: center;
   font-style: oblique;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 /* Navigation Bar */
@@ -117,14 +120,11 @@ footer {
 }
 
 /* Search Bar */
-/* Search Bar - Fixed Positioning for Responsiveness */
-.search-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
 @media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
   .search-container {
     position: relative;
     display: flex;
@@ -135,10 +135,20 @@ footer {
 
   #search-bar {
     width: 80%;
-    max-width: 300px;
+    max-width: 250px;
   }
 }
 
+/* Further reduce size on phones */
+@media (max-width: 480px) {
+  .container {
+    width: 98%;
+  }
+
+  .logo {
+    width: 80px; /* Make logo smaller on phones */
+  }
+}
 
 #search-bar {
   padding: 8px;
@@ -207,10 +217,10 @@ input::placeholder {
 }
 
 .logo {
-  width: 100px;  /* Adjust size as needed */
+  width: 100px; /* Adjust size as needed */
   height: auto;
   position: absolute;
-  top: 10px;
   left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
