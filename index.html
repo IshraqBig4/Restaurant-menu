@@ -8,17 +8,17 @@
 </head>
 <body>
 
-  <header>
-    <img src="logo.jpg.png" alt="Palm Tree Family Restaurant Logo" class="logo">
+  <header id="header" style="display: flex; flex-direction: column; background-image: url('logo.jpg.png'); background-repeat: no-repeat; background-size: 25%;">
+    <div style="margin: 4px; z-index: 2;">
+        <!-- <img src="logo.jpg.png" alt="Palm Tree Family Restaurant Logo" class="logo"> -->
+    </div>
     <h1>Palm Tree Family Restaurant</h1>
     <p>Authentic Indian & Chinese Cuisine</p>
     <div class="search-container">
-      <input type="text" id="search-bar" placeholder="Search menu..." oninput="showSuggestions()">
-      <div id="search-results" class="search-results"></div>
+        <input type="text" id="search-bar" placeholder="Search menu..." oninput="showSuggestions()">
+        <div id="search-results" class="search-results"></div>
     </div>
-    
-    
-  </header>
+</header>
   <button id="backToTop" onclick="scrollToTop()">↑</button>
 
   <nav id="navbar"></nav>
@@ -28,7 +28,20 @@
   <footer>
     <p>Call us: 05748 15169 | 05313 76026</p>
   </footer>
-
+  <script>
+    function adjustBackgroundSize() {
+        var header = document.getElementById('header');
+        if (window.innerWidth >= 1024) {
+            header.style.backgroundSize = '10%'; // Adjust this value as needed
+        } else {
+            header.style.backgroundSize = '25%';
+        }
+    }
+  
+    // Run on page load and when window resizes
+    adjustBackgroundSize();
+    window.addEventListener('resize', adjustBackgroundSize);
+  </script>
   <script src="script1.js"></script>
 </body>
 </html>
