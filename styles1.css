@@ -29,7 +29,7 @@ header {
   position: relative;
 }
 .header-text {
-  margin-top: 50px; /* Push text below the logo */
+  margin-top: 40px; /* Push text below the logo */
 }
 
 
@@ -222,11 +222,11 @@ input::placeholder {
 }
 
 .logo {
-  width: 70px; /* Adjust size for smaller screens */
+  width: 80px; /* Adjust size for smaller screens */
   height: auto;
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 10px;
+  left: 10px;
 }
 
 @media (max-width: 768px) {
@@ -234,3 +234,15 @@ input::placeholder {
     flex-direction: column; /* Keep everything centered */
     padding-top: 60px; /* Add extra padding so text doesn't overlap */
   }
+
+  .logo {
+    width: 70px;
+    left: 5px;
+    top: 5px;
+  }
+
+  .header-text {
+    margin-top: 50px; /* Ensure text is properly positioned below the logo */
+  }
+}
+
