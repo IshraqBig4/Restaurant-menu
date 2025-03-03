@@ -124,11 +124,13 @@ footer {
 }
 
 /* Search Bar */
-@media (max-width: 768px) {
-  .container {
-    width: 95%;
-  }
+.search-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 
+@media (max-width: 768px) {
   .search-container {
     position: relative;
     display: flex;
@@ -139,8 +141,9 @@ footer {
 
   #search-bar {
     width: 80%;
-    max-width: 250px;
+    max-width: 300px;
   }
+}
 }
 
 /* Further reduce size on phones */
