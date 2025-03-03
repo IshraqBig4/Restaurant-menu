@@ -16,19 +16,13 @@ body {
 
 /* Header Styling */
 header {
+
   background: maroon;
-  color: #F7E7CE;
+  color:#F7E7CE;
   padding: 20px;
   text-align: center;
   font-style: oblique;
   font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.header-text {
-  margin-top: 40px; /* Push text below the logo */
 }
 
 
@@ -224,12 +218,12 @@ input::placeholder {
 }
 
 .logo {
-  width: 100px; /* Adjust size as needed */
+  width: 120px;  /* Adjust size as needed */
   height: auto;
   position: absolute;
+  top: 10px;
   left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
 }
+
 
 
