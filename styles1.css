@@ -140,17 +140,6 @@ footer {
 }
 }
 
-/* Further reduce size on phones */
-@media (max-width: 480px) {
-  .container {
-    width: 98%;
-  }
-
-  .logo {
-    width: 80px; /* Make logo smaller on phones */
-  }
-}
-
 #search-bar {
   padding: 8px;
   border: 1px solid black;
