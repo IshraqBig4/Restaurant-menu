@@ -23,10 +23,15 @@ header {
   font-style: oblique;
   font-weight: bold;
   display: flex;
+  flex-direction: column; /* Stack items vertically */
   align-items: center;
   justify-content: center;
   position: relative;
 }
+.header-text {
+  margin-top: 50px; /* Push text below the logo */
+}
+
 
 /* Navigation Bar */
 nav {
@@ -217,10 +222,15 @@ input::placeholder {
 }
 
 .logo {
-  width: 100px; /* Adjust size as needed */
+  width: 70px; /* Adjust size for smaller screens */
   height: auto;
   position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 50px;
+  left: 50px;
 }
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Keep everything centered */
+    padding-top: 60px; /* Add extra padding so text doesn't overlap */
+  }
