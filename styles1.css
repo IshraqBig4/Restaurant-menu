@@ -117,11 +117,28 @@ footer {
 }
 
 /* Search Bar */
+/* Search Bar - Fixed Positioning for Responsiveness */
 .search-container {
   position: absolute;
   top: 20px;
   right: 20px;
 }
+
+@media (max-width: 768px) {
+  .search-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #search-bar {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
 
 #search-bar {
   padding: 8px;
