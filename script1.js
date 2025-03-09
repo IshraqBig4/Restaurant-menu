@@ -461,16 +461,26 @@ menuData.forEach((cat, index) => {
 
     const info = document.createElement("div");
     info.className = "info";
+
     const title = document.createElement("h3");
     title.textContent = item.name_en;
+
     const arabic = document.createElement("p");
     arabic.textContent = item.name_ar;
+
+    // **New: Add price**
+    const price = document.createElement("p");
+    price.className = "price"; // Add a class for styling
+    price.textContent = item.price ? `Price: ${item.price} SAR` : "Price: Not Available";
+
+    // Append elements
     info.appendChild(title);
     info.appendChild(arabic);
+    info.appendChild(price); // **New line to add price**
     card.appendChild(info);
 
     grid.appendChild(card);
-  });
+});
 
   section.appendChild(grid);
   menuContainer.appendChild(section);
