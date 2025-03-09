@@ -213,6 +213,11 @@ input::placeholder {
   top: 10px;
   left: 10px;
 }
+.price {
+  font-weight: bold;
+  color: gold;
+  margin-top: 5px;
+}
 
 
 
